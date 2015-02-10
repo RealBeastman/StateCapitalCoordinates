@@ -11,7 +11,7 @@ import CoreLocation
 
 public class CapitalCoordinates {
     
-    class func coordinatesFor(state: String) -> CLLocationCoordinate2D {
+    class func coordinatesFor(state: CapitalCoordinatesStateKey) -> CLLocationCoordinate2D {
         var coords = coordinates()
         return coords[state]!
     }
@@ -45,32 +45,85 @@ public class CapitalCoordinates {
                 "Montana": CLLocationCoordinate2DMake(46.5958, 112.0270),
                 "Nebraska": CLLocationCoordinate2DMake(40.8106, 96.6803),
                 "Nevada": CLLocationCoordinate2DMake(39.1608, 119.7539),
-                "New Hampshire": CLLocationCoordinate2DMake(43.2067, 71.5381),
-                "New Jersey": CLLocationCoordinate2DMake(40.2237, 74.7640),
-                "New Mexico": CLLocationCoordinate2DMake(35.6672, 105.9644),
-                "New York": CLLocationCoordinate2DMake(42.6525, 73.7572),
-                "North Carolina": CLLocationCoordinate2DMake(35.7806, 78.6389),
-                "North Dakota": CLLocationCoordinate2DMake(46.8133, 100.7790),
+                "NewHampshire": CLLocationCoordinate2DMake(43.2067, 71.5381),
+                "NewJersey": CLLocationCoordinate2DMake(40.2237, 74.7640),
+                "NewMexico": CLLocationCoordinate2DMake(35.6672, 105.9644),
+                "NewYork": CLLocationCoordinate2DMake(42.6525, 73.7572),
+                "NorthCarolina": CLLocationCoordinate2DMake(35.7806, 78.6389),
+                "NorthDakota": CLLocationCoordinate2DMake(46.8133, 100.7790),
                 "Ohio": CLLocationCoordinate2DMake(39.9833, 82.9833),
                 "Oklahoma": CLLocationCoordinate2DMake(35.4822, 97.5350),
                 "Oregon": CLLocationCoordinate2DMake(44.9308, 123.0289),
                 "Pennsylvania": CLLocationCoordinate2DMake(40.2697, 76.8756),
-                "Rhode Island": CLLocationCoordinate2DMake(41.8236, 71.4222),
-                "South Carolina": CLLocationCoordinate2DMake(34.0008, 81.0353),
-                "South Dakota": CLLocationCoordinate2DMake(44.3680, 100.3364),
+                "RhodeIsland": CLLocationCoordinate2DMake(41.8236, 71.4222),
+                "SouthCarolina": CLLocationCoordinate2DMake(34.0008, 81.0353),
+                "SouthDakota": CLLocationCoordinate2DMake(44.3680, 100.3364),
                 "Tennessee": CLLocationCoordinate2DMake(36.1667, 86.7833),
                 "Texas": CLLocationCoordinate2DMake(30.2500, 97.7500),
                 "Utah": CLLocationCoordinate2DMake(40.7500, 111.8833),
                 "Vermont": CLLocationCoordinate2DMake(44.2500, 72.5667),
                 "Virginia": CLLocationCoordinate2DMake(37.5333, 77.4667),
                 "Washington": CLLocationCoordinate2DMake(47.0425, 122.8931),
-                "West Virginia": CLLocationCoordinate2DMake(38.3472, 81.6333),
+                "WestVirginia": CLLocationCoordinate2DMake(38.3472, 81.6333),
                 "Wisconsin": CLLocationCoordinate2DMake(43.0667, 89.4000),
                 "Wyoming": CLLocationCoordinate2DMake(41.1456, 104.8019)
         ]
         
     }
     
+    enum CapitalCoordinatesStateKey {
+        case Alabama
+        case Alaska
+        case Arizona
+        case Arkansas
+        case California
+        case Colorado
+        case Connecticut
+        case Delaware
+        case Florida
+        case Georgia
+        case Hawaii
+        case Idaho
+        case Illinois
+        case Indiana
+        case Iowa
+        case Kansas
+        case Kentucky
+        case Louisiana
+        case Maine
+        case Maryland
+        case Massachusetts
+        case Michigan
+        case Minnesota
+        case Mississippi
+        case Missouri
+        case Montana
+        case Nebraska
+        case Nevada
+        case NewHampshire
+        case NewJersey
+        case NewMexico
+        case NewYork
+        case NorthCarolina
+        case NorthDakota
+        case Ohio
+        case Oklahoma
+        case Oregon
+        case Pennsylvania
+        case RhodeIsland
+        case SouthCarolina
+        case SouthDakota
+        case Tennessee
+        case Texas
+        case Utah
+        case Vermont
+        case Virginia
+        case Washington
+        case WestVirginia
+        case Wisconsin
+        case Wyoming
+    }
+
 }
 
 
